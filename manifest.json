@@ -1,0 +1,14 @@
+{
+"name": "测试无忧",
+"version": "1.12",
+"update_url":"http://tools.alipay.im/happyTest/updates.xml",
+"description": "Cookies清理，登陆保持，自动登陆。'测试无忧，大家都爱上自测，让BUG无处藏身!'",
+"background":{ "scripts": ["background.js"] },
+"options_page": "option.htm",
+"permissions": [ "cookies", "tabs", "contextMenus", "http://*/*", "https://*/*" ],
+"browser_action": {"default_icon": "ico48Gray.png","default_title":"测试无忧"},
+"icons": { "16": "ico48.png", "48": "ico48.png", "128": "ico128.png" },
+"content_scripts": [{"matches": ["*://*/*"],"js": ["cookies.js"],"run_at":"document_end"}],
+"homepage_url": "http://www.noahlu.com"
+}
+
